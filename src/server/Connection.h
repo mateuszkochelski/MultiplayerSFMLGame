@@ -2,7 +2,7 @@
 #pragma once
 
 class Connection {
-private:
+protected:
   sockaddr_in server_address;
   int socket_fd;
   socklen_t server_address_len;

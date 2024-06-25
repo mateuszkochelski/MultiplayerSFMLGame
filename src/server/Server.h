@@ -7,7 +7,9 @@ private:
 
 public:
   Server(const char *address, const size_t port) : Connection(address, port){};
-  void SendGameState(const char *data);
-  void ReceiveUserInput(const char *input);
-  void ConnectUser(const &Client);
+  void Communicate();
+
+private:
+  void SendGameState();
+  void ReceiveUserInput();
 };

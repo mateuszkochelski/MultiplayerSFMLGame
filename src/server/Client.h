@@ -3,5 +3,8 @@
 
 class Client : public Connection {
 private:
-  Client(const char *address, const size_t port) : Connection(address, port){};
+  Client(const char *address, const size_t port)
+      : Connection(address, port){
+
+        };
 };
